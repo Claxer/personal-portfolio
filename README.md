@@ -4,15 +4,18 @@ A simple personal portfolio website built using HTML.
 
 ## Features
 
-- About Me
-- Education
-- Skills
-- Projects
-- Contact Form
+* About Me
+* Education
+* Skills
+* Projects
+* Contact Form
+* Responsive layout
+* Custom styling with CSS
 
 ## Technologies Used
 
-- HTML5
+* HTML5
+* CSS3
 
 ## How to Run
 
