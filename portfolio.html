@@ -1,172 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jose Navoa | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Jose Navoa</h1>
-        <p>Aspiring Information Technology Student</p>
 
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#education">Education</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="hero">
 
-        <hr>
+            <p class="hero-small">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Jose Navoa</h1>
+
+            <p class="hero-title">
+                Aspiring Information Technology Student & Developer
+            </p>
+
+            <p class="hero-description">
+                First-year Information Technology student passionate about
+                programming, software development, data analysis, and
+                learning new technologies.
+            </p>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#profiles">Profiles</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+
     </header>
 
+
+    <!-- ABOUT -->
     <section id="about">
-        <h2>About Me</h2>
 
-        <img src="images/profile.jpg" alt="Profile Picture" width="200">
+        <div class="about-text">
 
-        <p>
-            Hello! I'm Jose, a first-year Information Technology student.
-            I enjoy learning programming, building beginner-friendly projects,
-            and improving my coding skills every day.
-        </p>
+            <p class="section-label">ABOUT ME</p>
 
-        <p>
-            My goal is to become a developer by continuously
-            learning new technologies and creating useful applications.
-        </p>
+            <h2>Who I Am</h2>
+
+            <p>
+                Hello! I'm Jose, a first-year Information Technology student
+                who enjoys programming, building applications, and exploring
+                different areas of technology.
+            </p>
+
+            <p>
+                I started by learning programming fundamentals and gradually
+                moved into building practical projects using Python, HTML,
+                CSS, JavaScript, APIs, databases, and GUI frameworks.
+            </p>
+
+            <p>
+                My goal is to become a skilled developer by continuously
+                improving my programming knowledge, learning new technologies,
+                and creating useful applications.
+            </p>
+
+        </div>
+
+        <div class="about-image">
+            <img src="images/profile.jpg" alt="Jose Navoa Profile Picture">
+        </div>
+
     </section>
 
-    <hr>
 
+    <!-- SKILLS -->
     <section id="skills">
-        <h2>Skills</h2>
 
-        <ul>
-            <li>HTML</li>
-            <li>Python</li>
-            <li>Git & GitHub</li>
-            <li>Problem Solving</li>
-            <li>Basic CSS</li>
-        </ul>
+        <p class="section-label">MY SKILLS</p>
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>
+                    Application development, functions, loops, error handling,
+                    file handling, APIs, and object-oriented concepts.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>
+                    Creating structured websites, portfolio pages,
+                    forms, navigation, and responsive layouts.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>
+                    Dark themes, responsive layouts, animations,
+                    cards, navigation, and modern UI design.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>
+                    Basic web interactivity, calculator applications,
+                    and front-end programming.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <p>
+                    Repository management, README files, project organization,
+                    commits, and version control.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQLite</h3>
+                <p>
+                    Creating databases, storing application data,
+                    and managing records.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <p>
+                    Working with pandas, statistics, API data,
+                    and matplotlib visualizations.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Problem Solving</h3>
+                <p>
+                    Algorithm design, logical thinking, debugging,
+                    flowcharts, and programming fundamentals.
+                </p>
+            </div>
+
+        </div>
+
     </section>
 
-    <hr>
 
+    <!-- TECHNOLOGIES -->
+    <section id="technologies">
+
+        <p class="section-label">TECHNOLOGIES</p>
+
+        <h2>Tools I Have Used</h2>
+
+        <div class="tech-list">
+
+            <span>Python</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>SQLite</span>
+            <span>Tkinter</span>
+            <span>CustomTkinter</span>
+            <span>Electron</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+            <span>NBA API</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>JupyterLab</span>
+            <span>Google Gen AI</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
     <section id="projects">
+
+        <p class="section-label">MY WORK</p>
+
         <h2>Projects</h2>
 
-        <article>
-            <h3>Python Calculator</h3>
+        <p class="projects-intro">
+            Here are some of the programming and technology projects
+            I have worked on while developing my skills.
+        </p>
 
-            <p>
-                A calculator built using Python with arithmetic operations,
-                history tracking, input validation, and error handling.
-            </p>
 
-            <a href="#">View Project</a>
+        <!-- Calculator -->
+        <article class="project-card">
+
+            <div class="project-number">01</div>
+
+            <div class="project-content">
+
+                <p class="project-type">PYTHON</p>
+
+                <h3>Scientific Calculator</h3>
+
+                <p>
+                    A Python calculator that started with basic arithmetic
+                    operations and developed into a scientific calculator.
+                    It includes calculation history, error handling,
+                    square root, percentage, factorial, cube root,
+                    absolute value, reciprocal, Pi, Euler's number,
+                    sine, cosine, and tangent.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Math</span>
+                    <span>Error Handling</span>
+                    <span>File Handling</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/simple-calculator"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
         </article>
 
-        <br>
 
-        <article>
-            <h3>NBA Player Stats</h3>
+        <!-- NBA -->
+        <article class="project-card">
 
-            <p>
-                A Python application that retrieves NBA player statistics,
-                season averages, last 10 games, and graphs using the NBA API.
-            </p>
+            <div class="project-number">02</div>
 
-            <a href="#">View Project</a>
+            <div class="project-content">
+
+                <p class="project-type">PYTHON • API • DATA ANALYSIS</p>
+
+                <h3>NBA Player Stats Analyzer</h3>
+
+                <p>
+                    A Python application that retrieves NBA player information
+                    and statistics using an API. The project includes player
+                    searching, season statistics, career statistics,
+                    last 10 games, traded-player handling, graphs,
+                    MVP awards, All-Star appearances, and All-NBA selections.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>NBA API</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Data Analysis</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/nba-player-stats"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Grade Analyzer -->
+        <article class="project-card">
+
+            <div class="project-number">03</div>
+
+            <div class="project-content">
+
+                <p class="project-type">PYTHON • WEB</p>
+
+                <h3>Student Grade Management & Performance Analyzer</h3>
+
+                <p>
+                    A student management application that records academic
+                    grades and attendance, calculates averages, determines
+                    letter grades, and evaluates academic performance.
+                    The project was also expanded with a web-based version.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Data Processing</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/student-grade-accumilator"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Password Analyzer -->
+        <article class="project-card">
+
+            <div class="project-number">04</div>
+
+            <div class="project-content">
+
+                <p class="project-type">PYTHON • ALGORITHMS</p>
+
+                <h3>Password Analysis Tool</h3>
+
+                <p>
+                    A Python project that analyzes possible password
+                    arrangements using permutations and factorial calculations.
+                    It demonstrates how the number of possible combinations
+                    increases as password length increases.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>itertools</span>
+                    <span>Math</span>
+                    <span>Algorithms</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/possible-password-identifier"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- NBA Card Tracker -->
+        <article class="project-card">
+
+            <div class="project-number">05</div>
+
+            <div class="project-content">
+
+                <p class="project-type">PYTHON • DATABASE • GUI</p>
+
+                <h3>NBA Card Tracker</h3>
+
+                <p>
+                    A desktop application designed to keep track of a
+                    collection of NBA cards. The project uses a graphical
+                    interface and SQLite database to store and manage
+                    card information and pricing data.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>CustomTkinter</span>
+                    <span>SQLite</span>
+                    <span>GUI</span>
+                    <span>API</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/nba-card-tracker-V2"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Casio -->
+        <article class="project-card">
+
+            <div class="project-number">06</div>
+
+            <div class="project-content">
+
+                <p class="project-type">WEB • JAVASCRIPT • ELECTRON</p>
+
+                <h3>Casio fx-991ES Plus Web Calculator</h3>
+
+                <p>
+                    A web-based calculator inspired by the Casio fx-991ES Plus.
+                    The project uses HTML, CSS, and JavaScript and was later
+                    configured with Electron to run as a desktop application.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Electron</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/CASIO-FX-991-ES-PLUS"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Hand Tracker -->
+        <article class="project-card">
+
+            <div class="project-number">07</div>
+
+            <div class="project-content">
+
+                <p class="project-type">CSS • HTML</p>
+
+                <h3>Weather Landing Page</h3>
+
+                <p>
+                    A weather landing page created using HTML and CSS.
+                    It features a responsive design, weather information,
+                    and a visually appealing layout.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/weathering-app"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Portfolio -->
+        <article class="project-card">
+
+            <div class="project-number">08</div>
+
+            <div class="project-content">
+
+                <p class="project-type">WEB DEVELOPMENT</p>
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    My personal portfolio website created using HTML and CSS.
+                    It showcases my skills, projects, education, profiles,
+                    and experience as an Information Technology student.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Responsive Design</span>
+                    <span>GitHub</span>
+                </div>
+
+                <a
+                    href="https://github.com/Claxer/personal-portfolio"
+                    target="_blank"
+                    class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
         </article>
 
     </section>
 
-    <hr>
+
+    <!-- LEARNING -->
+    <section id="learning">
+
+        <p class="section-label">CURRENTLY LEARNING</p>
+
+        <h2>My Learning Journey</h2>
+
+        <div class="learning-grid">
+
+            <div class="learning-card">
+                <h3>Programming</h3>
+                <p>
+                    Improving Python, Java, algorithms, functions,
+                    data structures, and object-oriented programming.
+                </p>
+            </div>
+
+            <div class="learning-card">
+                <h3>Web Development</h3>
+                <p>
+                    Developing my knowledge of HTML, CSS, JavaScript,
+                    responsive design, and web applications.
+                </p>
+            </div>
+
+            <div class="learning-card">
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Exploring generative AI, prompt design,
+                    AI development tools, and Google Gen AI.
+                </p>
+            </div>
+
+            <div class="learning-card">
+                <h3>Computer Systems</h3>
+                <p>
+                    Studying computer organization, architecture,
+                    data representation, storage, and processing.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
 
 
-<section id="education">
+    <!-- EDUCATION -->
+    <section id="education">
 
-    <h2>Education</h2>
+        <p class="section-label">EDUCATION</p>
 
-    <table border="1" cellpadding="10">
+        <h2>Academic Background</h2>
 
-        <tr>
-            <th>Year</th>
-            <th>School</th>
-            <th>Course / Level</th>
-        </tr>
+        <table>
 
-        <tr>
-            <td>2026 - Present</td>
-            <td>National University</td>
-            <td>Bachelor of Science in Information Technology</td>
-        </tr>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>School</th>
+                    <th>Course / Level</th>
+                </tr>
+            </thead>
 
-        <tr>
-            <td>2023 - 2025</td>
-            <td>Kings' Montessori School</td>
-            <td>Senior High School Graduate</td>
-        </tr>
+            <tbody>
 
-    </table>
+                <tr>
+                    <td>2026 - Present</td>
+                    <td>National University</td>
+                    <td>
+                        Bachelor of Science in Information Technology
+                    </td>
+                </tr>
 
-</section>
+                <tr>
+                    <td>2023 - 2025</td>
+                    <td>Kings' Montessori School</td>
+                    <td>
+                        Senior High School Graduate
+                    </td>
+                </tr>
 
-<hr>
+            </tbody>
 
-    <section>
+        </table>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+
+        <p class="section-label">EXPERIENCE</p>
+
+        <h2>Experience</h2>
+
+        <div class="experience-card">
+
+            <p class="experience-date">Professional Experience</p>
+
+            <h3>Manager's Assistant</h3>
+
+            <h4>Acquire BPO — Vocus Training Manager Team</h4>
+
+            <p>
+                Gained professional experience working with a training
+                management team and developing communication, organization,
+                leadership, and workplace skills.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROFILES -->
+    <section id="profiles">
+
+        <p class="section-label">CONNECT WITH ME</p>
+
+        <h2>Profiles</h2>
+
+        <p class="profile-description">
+            Feel free to connect with me or explore my projects
+            through these platforms.
+        </p>
+
+        <div class="profile-links">
+
+            <a
+                href="https://github.com/Claxer"
+                target="_blank">
+                <span>GitHub</span>
+                <small>github.com/Claxer</small>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/jose-manuel-navoa-711208428/"
+                target="_blank">
+                <span>LinkedIn</span>
+                <small>Jose Manuel Navoa</small>
+            </a>
+
+            <a
+                href="https://www.facebook.com/jmjnavoa/"
+                target="_blank">
+                <span>Facebook</span>
+                <small>Jose Manuel Navoa</small>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+
+        <p class="section-label">PERSONAL INTERESTS</p>
 
         <h2>Hobbies</h2>
 
-        <ol>
-            <li>Programming</li>
-            <li>Reading Books</li>
-            <li>Analyzing NBA Data</li>
-            <li>Learning New Technologies</li>
-            <li>Playing Video Games</li>
-        </ol>
+        <div class="hobbies-list">
+
+            <span>Programming</span>
+            <span>Reading Books</span>
+            <span>Analyzing NBA Data</span>
+            <span>Learning New Technologies</span>
+            <span>Playing Video Games</span>
+
+        </div>
 
     </section>
 
-    <hr>
 
+    <!-- CONTACT -->
     <section id="contact">
+
+        <p class="section-label">GET IN TOUCH</p>
 
         <h2>Contact Me</h2>
 
         <form>
 
-            <label>Name:</label><br>
-            <input type="text"><br><br>
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required>
 
-            <label>Email:</label><br>
-            <input type="email"><br><br>
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required>
 
-            <label>Message:</label><br>
-            <textarea rows="5" cols="40"></textarea><br><br>
+            <label for="message">Message</label>
 
-            <button type="submit">Send Message</button>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Your message"
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
 
         </form>
 
     </section>
 
-    <hr>
 
+    <!-- FOOTER -->
     <footer>
 
-        <p>&copy; 2026 Jose Navoa</p>
+        <p>
+            © 2026 Jose Navoa. Built with HTML & CSS.
+        </p>
 
         <p>
-            <a href="https://github.com/">GitHub</a> |
-            <a href="https://linkedin.com/">LinkedIn</a>
+            Aspiring IT Student • Developer • Lifelong Learner
         </p>
 
     </footer>
 
 </body>
+
 </html>
